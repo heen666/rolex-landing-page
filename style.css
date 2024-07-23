@@ -48,7 +48,7 @@ header .navigation-menu a {
     font-weight: 700;
     text-transform: uppercase;
     transition: 0.4s;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 55px;
     margin-right: 110px;
     justify-content: space-between;
@@ -58,6 +58,8 @@ header .navigation-menu a {
 header .navigation-menu a:hover {
     color: #3fe49a;
     transition: opacity 0.4s ease, color 0.4s ease, fill 0.4s ease;
+    transform: translateY(-4px);
+    transition: 0.3s ease-in-out;
 }
 
 .navigation-menu i {
@@ -111,7 +113,7 @@ video {
     font-weight: 700;
     text-transform: uppercase;
     transition: 0.4s ease-out;;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
@@ -126,6 +128,7 @@ video {
 .menu a:hover {
     color: #3fe49a;
     transition: opacity 0.4s ease, color 0.4s ease, fill 0.4s ease;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -134,7 +137,7 @@ video {
 .main-text {
     position: absolute;
     top: 47%;
-    left: 32%;
+    left: 31%;
     z-index: 999;
 }
 
@@ -228,7 +231,37 @@ video {
 }
 
 .social-channels li a:hover {
-    transform: scale(1.4);
-    transform: translateX(-3px);
+    transform: scale(1.5);
+    transform: translateX(-5px);
     transition: 0.3s ease-in-out;
+}
+
+/* Для экранов шириной до 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+/* Для экранов шириной от 601px до 1200px */
+@media (min-width: 601px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 80%;
+    }
+}
+
+/* Для экранов шириной более 1200px */
+@media (min-width: 1201px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        width: 70%;
+    }
 }
