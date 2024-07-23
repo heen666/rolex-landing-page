@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EB Garamond", sans-serif
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header and Navigation Menu*/
+
+.showcase header {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    background-color: #135b3a;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header .navigation-menu {
+    display: flex;
+    margin-left: auto;
+}
+
+header .navigation-menu a {
+    display: flex;
+    top: auto;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+    font-size: 1.4em;
+    margin-top: 55px;
+    margin-right: 110px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .navigation-menu a:hover {
+    color: #3fe49a;
+    transition: opacity 0.4s ease, color 0.4s ease, fill 0.4s ease;
+}
+
+.navigation-menu i {
+    color: #fff;
+    font-size: 1.1em;
+    margin-right: 5px;
+    align-content: center;
+    transition: 0.4s;
+}
+
+.rolex-logo {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 150px;
+    mix-blend-mode: multiply;
+    align-items: center;
+    background: url(img/rolex-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Video */
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+    mix-blend-mode: multiply;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+
+/* Menu Button */
+
+.menu-button {
+    position: absolute;
+    display: flex;
+    top: auto;
+    left: 5%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s ease-out;;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu-button i {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 5px;
+    align-content: center;
+    transition: 0.4s ease-out;
+}
+
+.menu a:hover {
+    color: #3fe49a;
+    transition: opacity 0.4s ease, color 0.4s ease, fill 0.4s ease;
+}
+
+
+/* Text on video */
+
+.main-text {
+    position: absolute;
+    top: 47%;
+    left: 32%;
+    z-index: 999;
+}
+
+.main-text h2 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-text h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 0.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* Main Button */
+
+.main-button a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: auto;
+    left: 38%;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #fff;
+    border: 3px solid #ffffff83;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.4s ease-out;
+    background-color: rgba(75, 75, 85, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-button a:hover {
+    background-color: rgba(20, 20, 25, 0.7);
+    border: 3px solid transparent;
+    left: 39%;
+    transition: 0.4s ease-in-out;
+}
+
+.main-button i {
+    font-size: 18px;
+}
+
+/* Social Channels and Icons */
+
+.social-channels {
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: 0%;
+    height: 80%;
+    gap: 45px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-channels li {
+    list-style: none;
+    color: #fff;
+}
+
+.social-channels li a {
+    display: inline-block;
+    margin-right: 30px;
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+.social-channels li i {
+    font-size: 1.7em;
+    margin-right: 5px;
+    align-content: center;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(75, 75, 85, 0);
+}
+
+.social-channels li a:hover {
+    transform: scale(1.4);
+    transform: translateX(-3px);
+    transition: 0.3s ease-in-out;
+}
